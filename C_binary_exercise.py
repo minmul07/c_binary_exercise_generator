@@ -26,9 +26,9 @@ print(f"num1: {num1_str}")
 print(f"num2: {num2_str}")
 
 if mode == 1: #즉시 출력
-    print(f"{num1_str} & {num2_str}:   {format(num_and).zfill(difficulty).rjust(7, '0')}   AND")
-    print(f"{num1_str} | {num2_str}:   {format(num_or).zfill(difficulty).rjust(7, '0')}   OR")
-    print(f"{num1_str} ^ {num2_str}:   {format(num_xor).zfill(difficulty).rjust(7, '0')}   XOR")
+    print(f"{num1_str} & {num2_str}:   {format(num_and, 'b').zfill(difficulty).rjust(7, '0')}   AND")
+    print(f"{num1_str} | {num2_str}:   {format(num_or, 'b').zfill(difficulty).rjust(7, '0')}   OR")
+    print(f"{num1_str} ^ {num2_str}:   {format(num_xor, 'b').zfill(difficulty).rjust(7, '0')}   XOR")
     
 else: #퀴즈
     userInput = input(f"{num1_str} & {num2_str}: (7자리로 입력) ")

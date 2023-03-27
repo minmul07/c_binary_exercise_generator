@@ -2,6 +2,7 @@ import random
 
 #비트 수 설정.
 difficulty = 5 # 3 ~ 7까지의 숫자
+difficulty = random.randint(3, 7)
 
 num1 = random.getrandbits(difficulty)
 num2 = random.getrandbits(difficulty)

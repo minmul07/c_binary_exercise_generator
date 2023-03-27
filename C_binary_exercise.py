@@ -1,7 +1,7 @@
 import random
 
 #비트 수 설정.
-difficulty = 4 # 3 ~ 7까지의 숫자
+difficulty = 5 # 3 ~ 7까지의 숫자
 
 num1 = random.getrandbits(difficulty)
 num2 = random.getrandbits(difficulty)
@@ -18,8 +18,8 @@ num_xor = num1 ^ num2
 
 print(f"num1: {num1_str}")
 print(f"num2: {num2_str}")
-print(f"AND:  {format(num_and, 'b').zfill(difficulty).rjust(7, '0')}")
-print(f"OR:   {format(num_or, 'b').zfill(difficulty).rjust(7, '0')}")
-print(f"XOR:  {format(num_xor, 'b').zfill(difficulty).rjust(7, '0')}")
+print(f"{num1_str} & {num2_str}:   {format(num_and, 'b').zfill(difficulty).rjust(7, '0')}   AND")
+print(f"{num1_str} | {num2_str}:   {format(num_or, 'b').zfill(difficulty).rjust(7, '0')}   OR")
+print(f"{num1_str} ^ {num2_str}:   {format(num_xor, 'b').zfill(difficulty).rjust(7, '0')}   XOR")
 
 #
